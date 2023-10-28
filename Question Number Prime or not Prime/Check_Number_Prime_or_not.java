@@ -9,11 +9,14 @@ class Check_Number_Prime_or_not {
             System.out.print("Enter Number :- ");
             int no = Integer.parseInt(Br.readLine());
             // Tack Input from User
-
-            if (no % 2 == 0) { // Check Number is Prime or not
-                System.out.println(no + " Is Prime Number");
+            if (no > 0) {
+                if (no % 2 == 0) { // Check Number is Prime or not
+                    System.out.println(no + " Is Prime Number");
+                } else {
+                    System.out.println(no + " Is Not Prime Number");
+                }
             } else {
-                System.out.println(no + " Is Not Prime Number");
+                System.out.println("Please Enter Positive Integer");
             }
 
         } catch (Exception e) {
